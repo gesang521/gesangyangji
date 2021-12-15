@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Below is the head area, this area is for browser--> 
+<head>
+<title> Gesangyangji Person Website</title>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- meta name="viewport" content="width=device-width, initial-scale=1"-->
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*************************************** Hero Image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("tibet3.jpg");
+  height: 35%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: cursive;
+  font-size:30px
+}
+.hero-text button {
+  background-color: #2874A6; 
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin:0px 0px;
+  left:50%;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 1.s;
+}
+.hero-text button:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+
+/*************************************** Education */
+
+.leftcolumn_edu {   
+  float: left;
+  width: 15%;
+  padding: 5px;
+  margin-top:80px;
+  height: 100px;
+  color: #4685C8;
+}
+.rightcolumn_edu {
+  float: right;
+  width: 75%;
+  padding-top: 25px;
+  padding-left: 30px;
+  margin-top:20px;
+  height: 450px;
+  color: #34495E;
+}
+.card_edu {
+  padding: 20px;
+  margin-top: 5px;
+  height: 500px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #ECF0F5;
+  font-size:18px
+}
+p.big {line-height: 1.5;}
+
+/*************************************** PUB&PRE */
+
+.leftcolumn_pp {   
+  float: left;
+  width: 18%;
+  padding: 5px;
+  margin-top:80px;
+  height: 200px;
+  color: #4685C8;
+}
+
+.rightcolumn_pub {
+  float: right;
+  width: 75%;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-top:20px;
+  height: 180px;
+  text-align: justify;
+  color: #34495E;
+}
+
+.rightcolum_pre {
+  float: right;
+  width: 75%;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-top:15px;
+  height: 320px;
+  text-align: justify;
+  color: #34495E;
+}
+
+.card_pub {
+  padding: 20px;
+  margin-top: 5px;
+  height: 580px;
+  padding-left: 90px;
+  padding-right: 120px;
+  background-color: #ECF0F5;
+  font-size:18px
+}
+
+ul.a {list-style-type: square;}
+/*************************************** Awd */
+.leftcolumn_awd {   
+  float: left;
+  width: 15%;
+  padding: 5px;
+  margin-top:50px;
+  height: 50px;
+  color: #4685C8;
+}
+.rightcolumn_awd {
+  float: right;
+  width:77%;
+  padding-top: 18px;
+  padding-left: 30px;
+  margin-top:15px;
+  height: 260px;
+  color: #34495E;
+}
+.card_awd {
+  padding: 20px;
+  margin-top: 5px;
+  height: 300px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color:#ECF0F5;
+  font-size:18px
+}
+/*************************************** Skill */
+.leftcolumn_ski {   
+  float: left;
+  width: 15%;
+  padding: 5px;
+  margin-top:30px;
+  height: 50px;
+  color: #4685C8;
+}
+.rightcolumn_ski {
+  float: right;
+  width:77%;
+  padding-top: 18px;
+  padding-left: 30px;
+  margin-top:15px;
+  height: 130px;
+  color: #34495E;
+}
+.card_ski {
+  padding: 20px;
+  margin-top: 5px;
+  height: 180px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #ECF0F5;
+  font-size:18px
+}
+/****************************************/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*************************************** Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  height: 300px
+  margin-top: 5px;
+  background-color: #2874A6;
+  color:white
+}
+p.foo {text-align: left;}
+a:link, a:visited {
+  background-color: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+</style>
+</head>
+
+<!-- Below is the head area-->
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 class="glow"><i>Challenge makes Change</i></h1>
+    <a href="file:///Users/gesang/Desktop/Class/LSC532/personalwebsite/gesangyangji.html"><button>Home</button></a>
+    <a href="file:///Users/gesang/Desktop/Class/LSC532/personalwebsite/CV.pdf" download><button>Download CV</button></a>  
+  </div>
+</div>
+
+<div class="row">
+	<div class="card_edu">
+		<div class="leftcolumn_edu">
+			<h2 style="font-size:27px"> EDUCATION</h2>
+		</div>
+		<div class="rightcolumn_edu">
+			<h3 style="font-size:20px"> University of Wisconsin-Madison (UW-Mdisonn), U.S. </h3>
+			<p>Ph.D.: Nelson Institute Environment and Resources;  Expected August 2023  </p>
+      <p>Minor: Science Communication.  </p>
+			<p>M.S.: Atmospheric & Oceanic Sciences;  May 2020 </p>
+      <p>Certificate: Energy Analysis and Policy.  </p>
+			<p><i>Advisors: Dr. Tracey Holloway, Dr. Daniel Vimont</i>> </p>
+			<br>
+			<h3 style="font-size:20px"> Nanjing University of Information Science & Technology (NUIST), China </h3>
+			<p>B.S.: Atmospheric Sciences. June 2017  </p>
+			<p><i>Senior thesis: Analysis of temperature and precipitation variation in Tibet in the last 55 years </i>> </p>
+		</div>
+	</div>
+
+	<div class="card_pub">
+		<div class="leftcolumn_pp">
+			<h2 style="font-size:27px">PUBLICATOINS</h2>
+      <h2 style="font-size:27px">&</h2>
+      <h2 style="font-size:27px">PRESENTATIONS</h2>
+		</div>
+
+		<div class="rightcolumn_pub">	
+      <ul class="a">
+  			<li><p class="big"><b>Gesangyangji</b>, Daniel J. Vimont, T. Holloway (2021). Temporal and spatial changes in the building energy demand across the Easter United States,under review.</p> </li>
+  			<li><p class="big"><b>Gesangyangji</b>, Daniel J. Vimont, T. Holloway, and D. Lorenz (2021). A Methodology for Evaluating Future Climate Impact on Building Design Conditions, in preparation for submission to <i>Environmental Research Letter</i>.</p></li>	
+      </ul>
+		</div>
+
+    <div class="rightcolum_pre">
+      <ul>
+        <li><p class="big">“Building design for a changing climate”, <b>Oral presentation</b>. The Upper Midwest Association for Campus Sustainability (UMACS) Conference, Online, October 2021.</p></li>
+        <li><p class="big">“Studying the Impacts of Climate Change on Building Specifications”, <b>Poster presentation</b>. 100th American Meteorological Society Annual Meeting (AMS), Boston, MA, January 2020.</p></li>
+        <li><p class="big">“The Transition of Wisconsin from Coal to Clean Energy”, <b>Oral presentation</b>. Energy Analysis & Policy Capstone Project, UW-Madison, WI, May 2019.</p></li>
+        <li><p class="big">“Characterizing the Aerosols over the Tibetan Plateau”. <b>Poster presentation</b>. 4th NASA Health and Air Quality Applied Sciences Team (HAQAST) meeting, UW-Madison, WI, July 2018.</p></li>
+     </ul>
+    </div>
+	</div>
+
+  <div class="card_awd">
+    <div class="leftcolumn_awd">
+      <h2 style="font-size:27px">HONORS</h2>
+    </div>
+    <div class="rightcolumn_awd"> 
+      <p><b>January 2020  </b> 100th American Meteorological Society Student Presentation Honorable Mention.</p>
+      <p><b>January 2020  </b> Department of Atmospheric & Oceanic Sciences Travel Awards, UW-Madison.</p>
+      <p><b>April 2019  </b> Professional Development Grant by Nelson Institute, UW-Madison.</p>
+      <p><b>2016-2017  </b> The Third Prize Scholarship, NUIST.</p>
+      <p><b>2014-2016  </b> The Second Prize Scholarship, NUIST.</p>
+      <p><b>2014-2016  </b> Merit Student, NUIST.</p>
+    </div>
+  </div>
+
+	<div class="card_ski">
+    <div class="leftcolumn_ski">
+      <h2 style="font-size:27px">SKILLS</h2>
+    </div>
+
+   	<div class="rightcolumn_ski">
+    	<p><b>Programming</b>: Python, MATLAB, NCAR Command Language (NCL), HTML, CSS</p>
+    	<p><b>Language</b>: Fluent in Mandarin, Tibetan and English</p>
+    </div>
+  </div>
+</div>	
+ 
+<div class="footer">
+  <p style="font-size:22px"><a href="mailto:gesangyangji@wisc.edu"><b>Contact Me</b></a></p>
+  <p class="foo">Copyright &copy; 2021 Gesangyangji</p>  
+</div>
+
+</body>
+</html>
+
